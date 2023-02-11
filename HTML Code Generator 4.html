@@ -36,6 +36,10 @@
     border-radius: 20px;
 	border: 2px solid purple;
   }
+  .maroon-button {
+    border-radius: 20px;
+	border: 2px solid maroon;
+  }
   </style>
   
 	<h1>HTML Script Creator for UM Western Moodle</h1>
@@ -84,21 +88,21 @@
 <code id="html-code4"></code>
     </pre>
 		
-	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/Email.JPG?raw=true" alt="Email Link Generator Image" width=50%><br>
+	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/Email.JPG?raw=true" alt="Email Link Generator Image" width=45%><br>
 	
 	<!--<h2>Email Link Generator</h2>-->
 	
     <label for="emailaddress">Enter the email address:</label><br>
     <textarea rows="1" id="emailaddress" name="message" placeholder="" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
 	
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="Email()" class="purple-button">Create Email Link</button><br><br>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="Email()" class="maroon-button">Create Email Link</button><br><br>
 	
 	<pre>
 <code id="html-code2"></code>
     </pre>
     <div id="output2"></div>
 		
-	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/LinkGen.JPG?raw=true" alt="Link Generator Image" width=50%><br>
+	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/LinkGen.JPG?raw=true" alt="Link Generator Image" width=40%><br>
 	
 	<!--<h2>URL Link Generator</h2>-->
 	
@@ -108,10 +112,75 @@
     <label for="theurl">Enter the url:</label><br>
     <textarea rows="1" id="theurl" name="message" placeholder="" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
 	
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="UrlCreate()" class="purple-button">Create URL</button><br><br>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="UrlCreate()" class="maroon-button">Create URL</button><br><br>
 	
 	<pre>
 <code id="html-code3"></code>
+    </pre><br>
+	
+	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/InstructorCard.JPG?raw=true" alt="Instructor Card Generator Image" width=40%><br>
+	
+	<!--<h2>Instructor Card Generator</h2>-->
+	
+    <label for="instructorname">Enter your name as you want it displayed:</label><br>
+    <textarea rows="1" id="instructorname" name="message" placeholder="" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
+	
+    <label for="linea">Enter the first line:</label><br>
+    <textarea rows="2" id="linea" name="message" placeholder="" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+	
+    <label for="lineb">Enter the second line:</label><br>
+    <textarea rows="2" id="lineb" name="message" placeholder="" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+	
+    <label for="linec">Enter the third line:</label><br>
+    <textarea rows="2" id="linec" name="message" placeholder="" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+	
+    <label for="lined">Enter the fourth line:</label><br>
+    <textarea rows="2" id="lined" name="message" placeholder="" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+	
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="InstructorCard()" class="maroon-button">Create Instructor Card</button><br><br>
+	
+	<pre>
+<code id="html-code5"></code>
+    </pre><br>
+	
+	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/Header.JPG?raw=true" alt="Header Generator Image" width=50%><br>
+	
+	<!--<h2>Header Generator</h2>-->
+	
+    <label for="headertext">Enter the text for your header:</label><br>
+    <textarea rows="1" id="headertext" name="message" placeholder="" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
+	
+    <label for="paragraphtext">Enter the text after the header, if any:</label><br>
+    <textarea rows="2" id="paragraphtext" name="message" placeholder="" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+	
+<style>
+select {
+font-family: Cambria, serif; font-size: 1.05em;
+}
+</style>
+	
+	
+<select id="ColorSelect">
+  <option value="color0">Red</option>
+  <option value="color1">Yellow</option>
+  <option value="color2">Green</option>
+  <option value="color3">Blue</option>
+  <option value="color4">Turquoise</option>
+  <option value="color5">Black</option>
+  <option value="color6">Light Gray</option>
+</select>
+	
+<select id="IconSelect">
+  <option value="icon0">Book</option>
+  <option value="icon1">Pencil</option>
+  <option value="icon2">Clock</option>
+  <option value="icon3">User</option>
+</select>
+	
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="HeaderCreate()" class="maroon-button">Create Header</button><br><br>
+	
+	<pre>
+<code id="html-code6"></code>
     </pre><br>
 	
 	<h4>Questions? Suggestions? Bugs? Please contact Dr. Debbie Seacrest <a href="https://pronouns.org/they-them">(they/them)</a> at <a href="mailto:debbie.seacrest@umwestern.edu">debbie.seacrest@umwestern.edu</a></h4>
@@ -232,6 +301,116 @@
         
 		// Display the output
         document.getElementById("html-code3").innerHTML = output3;
+      }
+	  
+	  function InstructorCard() {
+		let output5 = "";
+	  
+        // Get the instructor name
+        let instructorname = document.getElementById("instructorname").value;
+							
+		// If instructor name is non-empty, add instructor name
+		if(!(instructorname==="")) {
+			output5 += '<strong>' + instructorname + '</strong><br>';
+			}			
+				
+        // Get the first line
+        let linea = document.getElementById("linea").value;
+							
+		// If first line is non-empty, add first line
+		if(!(linea==="")) {
+			output5 += linea + '<br>';
+			}
+		
+        // Get the second line
+        let lineb = document.getElementById("lineb").value;
+							
+		// If second line is non-empty, add second line
+		if(!(lineb==="")) {
+			output5 += lineb + '<br>';
+			}
+				
+        // Get the third line
+        let linec = document.getElementById("linec").value;
+							
+		// If third line is non-empty, add third line
+		if(!(linec==="")) {
+			output5 += linec + '<br>';
+			}
+				
+        // Get the fourth line
+        let lined = document.getElementById("lined").value;
+							
+		// If fourth line is non-empty, add fourth line
+		if(!(lined==="")) {
+			output5 += lined + '<br>';
+			}
+		
+        // Replace angle brackets with html code
+		output5 = output5.replace(/</g, "&lt;");
+		output5 = output5.replace(/>/g, "&gt;");
+        
+		// Display the output
+        document.getElementById("html-code5").innerHTML = output5;
+      }
+	  
+	  function HeaderCreate() {
+		let output6 = "";
+		
+		let selectedColorValue = document.getElementById("ColorSelect").value;	
+		let selectedIconValue = document.getElementById("IconSelect").value;		
+		
+
+
+	  
+        // Get the header text to display
+        let headertext = document.getElementById("headertext").value;
+		
+        // Get the paragraph text to display
+        let paragraphtext = document.getElementById("paragraphtext").value;
+		
+		// Set header color
+		let headertextcolor = "white"; // white text
+		let headercolor = "danger"; // red
+		if(selectedColorValue=="color1")
+			headercolor = "warning"; // yellow
+		if(selectedColorValue=="color2")
+			headercolor = "success"; // green			
+		if(selectedColorValue=="color3")
+			headercolor = "primary"; // blue			
+		if(selectedColorValue=="color4")
+			headercolor = "info"; // turquoise			
+		if(selectedColorValue=="color5")
+			headercolor = "dark"; // black			
+		if(selectedColorValue=="color6")
+			{headercolor = "secondary"; // light gray
+			headertextcolor = "dark";} // black text
+						
+        // Set icon to display
+		let headericon = "fa fa-book"; // book icon		
+		if(selectedIconValue=="icon1")
+			headericon = "fa fa-pencil"; // pencil icon			
+		if(selectedIconValue=="icon2")
+			headericon = "fa fa-clock-o"; // clock icon
+		if(selectedIconValue=="icon3")
+			headericon = "fa fa-book"; // book icon
+
+
+        // Create code
+        output6 += '<div class="card-header text-' + headertextcolor + ' bg-' + headercolor + ' rounded"><i class="' + headericon + '" aria-hidden="true"></i>&nbsp;' + headertext + '</div><br>';	
+							
+		// If paragraph text is non-empty, add paragraph text
+		if(!(paragraphtext==="")) {
+			output6 += '<p>' + paragraphtext + '</p>';
+			}
+				
+        // Replace angle brackets with html code and handle line breaks in body text
+		output6 = output6.replace(/</g, "&lt;");
+		output6 = output6.replace(/>/g, "&gt;");
+		output6 = output6.replace(/\n/g, "\n<br>");	
+        
+		// Display the output
+        document.getElementById("html-code6").innerHTML = output6;
       }
     </script>
   </body>
