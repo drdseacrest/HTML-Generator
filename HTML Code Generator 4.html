@@ -40,87 +40,28 @@
     border-radius: 20px;
 	border: 2px solid maroon;
   }
+
   </style>
   
 	<h1>HTML Script Creator for UM Western Moodle</h1>
 	
-	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/Callout.JPG?raw=true" alt="Callout Card Image" width=50%><br>
+	<hr>
 	
-	<!--<h2>Callout Card Generator</h2>-->
+	<h2>Directions:</h2> Click an image below and enter your desired text in the input boxes. Choose a color and icon if applicable, and click the Create button to generate html code. Copy that html code and go to Moodle. Click the "Edit mode" toggle at the top right and click "Add an activity or resource". Choose "Label" and click the &lt;/&gt; button (generally in the upper right) to enter html mode. Replace the text there with the code you copied, and then click the "Save and return to course button" at the bottom.<br><br>
 
-    <label for="lineone">Enter the title for the card:</label><br>
-    <textarea rows="1" id="lineone" name="message" placeholder="Callout Card Generator" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
 	
-    <label for="linetwo">Enter the heading for the card:</label><br>
-    <textarea rows="1" id="linetwo" name="message" placeholder="Heading" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
+	<br><a href="#instrcardgen"><img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJInstructorCardImage.jpg?raw=true" alt="Instructor Card Generator with Photo Image" width=30%></a>
+	<a href="#emailgen"><img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJEmail.jpg?raw=true" alt="Email Generator" width=30%></a>
+	<a href="#linkgen"><img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJLinkGen.jpg?raw=true" alt="Link Generator" width=30%></a><br><br>
+	<a href="#callcardgen"><img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJCallout.jpg?raw=true" alt="Callout Card Generator" width=30%></a>
+	<a href="#alertgen"><img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJAlertGen.jpg?raw=true" alt="Alert Generator" width=30%></a>
+	<a href="#headergen"><img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJJHeader.jpg?raw=true" alt="Header Generator" width=30%></a><br>
 	
-    <label for="linethree">Enter the body text for the card:</label><br>
-    <textarea rows="10" id="linethree" name="message" placeholder="Body text" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+	<hr>
 	
-    <button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(0)" class="red-button">Create Red Card</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(1)" class="yellow-button">Create Yellow Card</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(2)" class="green-button">Create Green Card</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(3)" class="blue-button">Create Blue Card</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(4)" class="turquoise-button">Create Turquoise Card</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(5)" class="black-button">Create Black Card</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(6)" class="gray-button">Create Gray Card</button> <br><br>
+	<h2 id="instrcardgen">Instructor Card Generator</h2>
 	
-	<pre>
-<code id="html-code1"></code>
-    </pre>
-		
-	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/AlertGen.JPG?raw=true" alt="Alert Image" width=50%><br>
-	
-	<!--<h2>Alert Generator</h2>-->
-	
-    <label for="alerttext">Enter the text you want displayed:</label><br>
-    <textarea rows="10" id="alerttext" name="message" placeholder="Alert Generator" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
-	
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(0)" class="red-button">Create Red Alert</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(1)" class="yellow-button">Create Yellow Alert</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(2)" class="green-button">Create Green Alert</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(3)" class="blue-button">Create Blue Alert</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(4)" class="turquoise-button">Create Turquoise Alert</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(5)" class="black-button">Create Dark Gray Alert</button>
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(6)" class="gray-button">Create Light Gray Alert</button> <br><br><br>
-	
-	<pre>
-<code id="html-code4"></code>
-    </pre>
-		
-	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/Email.JPG?raw=true" alt="Email Link Generator Image" width=45%><br>
-	
-	<!--<h2>Email Link Generator</h2>-->
-	
-    <label for="emailaddress">Enter the email address:</label><br>
-    <textarea rows="1" id="emailaddress" name="message" placeholder="email.link.generator@umwestern.edu" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
-	
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="Email()" class="maroon-button">Create Email Link</button><br><br>
-	
-	<pre>
-<code id="html-code2"></code>
-    </pre>
-    <div id="output2"></div>
-		
-	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/LinkGen.JPG?raw=true" alt="Link Generator Image" width=40%><br>
-	
-	<!--<h2>URL Link Generator</h2>-->
-	
-    <label for="thetext">Enter the text you want displayed:</label><br>
-    <textarea rows="1" id="thetext" name="message" placeholder="here" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
-	
-    <label for="theurl">Enter the url:</label><br>
-    <textarea rows="1" id="theurl" name="message" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
-	
-	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="UrlCreate()" class="maroon-button">Create URL</button><br><br>
-	
-	<pre>
-<code id="html-code3"></code>
-    </pre><br>
-	
-	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/InstructorCardImage.JPG?raw=true" alt="Instructor Card Generator with Photo Image" width=70%><br>
-	
-	<!--<h2>Instructor Card Generator</h2>-->
+	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJInstructorCardImage.jpg?raw=true" alt="Instructor Card Generator with Photo Image" width=50%><br><br>
 	
     <label for="instructorname">Enter your name as you want it displayed:</label><br>
     <textarea rows="1" id="instructorname" name="message" placeholder="Dr. Debbie Seacrest" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
@@ -147,17 +88,108 @@
 	
 	<pre>
 <code id="html-code5"></code>
+
     </pre><br>
 	
-	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/Header.JPG?raw=true" alt="Header Generator Image" width=50%><br>
+	<hr>	
 	
-	<!--<h2>Header Generator</h2>-->
+	<h2 id="emailgen">Email Link Generator</h2>
 	
+	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJEmail.jpg?raw=true" alt="Email Link Generator Image" width=45%><br>
+	
+	
+    <label for="emailaddress">Enter the email address:</label><br>
+    <textarea rows="1" id="emailaddress" name="message" placeholder="email.link.generator@umwestern.edu" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+	
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="Email()" class="maroon-button">Create Email Link</button><br><br>
+	
+	<pre>
+<code id="html-code2"></code>
+    </pre>
+    <div id="output2"></div>
+	
+	<hr>
+	
+	<h2 id="linkgen">URL Link Generator</h2>
+		
+	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJLinkGen.jpg?raw=true" alt="Link Generator Image" width=40%><br>
+	
+	
+    <label for="thetext">Enter the text you want displayed:</label><br>
+    <textarea rows="1" id="thetext" name="message" placeholder="text" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
+	
+    <label for="theurl">Enter the url:</label><br>
+    <textarea rows="1" id="theurl" name="message" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+	
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="UrlCreate()" class="maroon-button">Create URL</button><br><br>
+	
+	<pre>
+<code id="html-code3"></code>
+    </pre><br>
+
+	<hr>
+	
+	<h2 id="callcardgen">Callout Card Generator</h2>
+	
+	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJCallout.jpg?raw=true" alt="Callout Card Image" width=50%><br>
+
+    <label for="lineone">Enter the title for the card:</label><br>
+    <textarea rows="1" id="lineone" name="message" placeholder="Callout Card Generator" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
+	
+    <label for="linetwo">Enter the heading for the card:</label><br>
+    <textarea rows="1" id="linetwo" name="message" placeholder="Heading" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
+	
+    <label for="linethree">Enter the body text for the card:</label><br>
+    <textarea rows="10" id="linethree" name="message" placeholder="Body text" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+	
+    <button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(0)" class="red-button">Create Red Card</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(1)" class="yellow-button">Create Yellow Card</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(2)" class="green-button">Create Green Card</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(3)" class="blue-button">Create Blue Card</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(4)" class="turquoise-button">Create Turquoise Card</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(5)" class="black-button">Create Black Card</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="ColorCard(6)" class="gray-button">Create Gray Card</button> <br><br>
+	
+	<pre>
+<code id="html-code1"></code>
+    </pre>
+
+	<hr>
+	
+	<h2 id="alertgen">Alert Generator</h2>
+		
+	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJAlertGen.jpg?raw=true" alt="Alert Image" width=50%><br>
+
+	
+    <label for="alerttext">Enter the text you want displayed:</label><br>
+    <textarea rows="10" id="alerttext" name="message" placeholder="Alert Generator" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+	
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(0)" class="red-button">Create Red Alert</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(1)" class="yellow-button">Create Yellow Alert</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(2)" class="green-button">Create Green Alert</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(3)" class="blue-button">Create Blue Alert</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(4)" class="turquoise-button">Create Turquoise Alert</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(5)" class="black-button">Create Dark Gray Alert</button>
+	<button style="font-family: Cambria, serif; font-size: 1.05em" onclick="AlertBanner(6)" class="gray-button">Create Light Gray Alert</button> <br><br><br>
+	
+	<pre>
+<code id="html-code4"></code>
+    </pre>		
+	
+
+	
+	<hr>
+	
+	<h2 id="headergen">Header Generator</h2>
+	
+	<img src="https://github.com/drdseacrest/HTML-Generator/blob/main/JJJHeader.jpg?raw=true" alt="Header Generator Image" width=50%><br>
+	
+		
     <label for="headertext">Enter the text for your header:</label><br>
-    <textarea rows="1" id="headertext" name="message" placeholder="Header with color and chosen icon" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
+    <textarea rows="1" id="headertext" name="message" placeholder="Header" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><br>
 	
     <label for="paragraphtext">Enter the text after the header (optional):</label><br>
-    <textarea rows="2" id="paragraphtext" name="message" placeholder="and with optional text" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
+    <textarea rows="2" id="paragraphtext" name="message" placeholder="with optional text" value ="" style="font-family: Cambria, serif; font-size: 1.05em"></textarea><br><p></p>
 	
 <style>
 select {
@@ -193,6 +225,9 @@ font-family: Cambria, serif; font-size: 1.05em;
 
 
     <script>
+	
+	
+	
       function ColorCard(colorCode) {
         // Get the line one text
         let lineone = document.getElementById("lineone").value;
